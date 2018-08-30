@@ -9,7 +9,8 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="624.0" vgap="10.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="624.0" vgap="10.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:id="sample.principalController
+">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="458.92401123046875" minWidth="10.0" prefWidth="50.0813102722168" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="458.92401123046875" minWidth="10.0" prefWidth="390.3746032714844" />

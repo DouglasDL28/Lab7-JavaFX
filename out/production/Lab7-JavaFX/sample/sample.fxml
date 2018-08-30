@@ -9,7 +9,8 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="624.0" vgap="10.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="624.0" vgap="10.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:id="sample.principalController
+">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="458.92401123046875" minWidth="10.0" prefWidth="50.0813102722168" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="458.92401123046875" minWidth="10.0" prefWidth="390.3746032714844" />
@@ -26,8 +27,8 @@
       <TableView fx:id="listsTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
         <columns>
           <TableColumn fx:id="namesColumn" prefWidth="118.13866806030273" text="Nombre" />
-          <TableColumn fx:id="pendingsCol" prefWidth="169.86134338378906" text="Pendientes" />
-            <TableColumn fx:id="totalsCol" prefWidth="96.59454345703125" text="Total" />
+          <TableColumn fx:id="pendingsColumn" prefWidth="169.86134338378906" text="Pendientes" />
+            <TableColumn fx:id="totalsColumn" prefWidth="96.59454345703125" text="Total" />
         </columns>
       </TableView>
       <Label prefHeight="17.0" prefWidth="204.0" text="Mis listas:" textAlignment="CENTER" GridPane.columnIndex="1">

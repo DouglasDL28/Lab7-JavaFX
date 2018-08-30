@@ -3,6 +3,7 @@ package sample;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -37,7 +38,7 @@ public class principalController {
     Button addListButton;
 
 
-    public void openNewListWindow(ActionEvent event) {
+    public void newListWindow(ActionEvent event) {
         Parent root;
         try {
 
@@ -48,6 +49,7 @@ public class principalController {
             stage.setTitle("Seleccion");
             stage.setScene(new Scene(root, 450, 450));
 
+            /*
             // Manda la persona seleccionada
             newListController newListController = loader.getController();
             ShoppingItem selectedItem = listsTable.getSelectionModel().getSelectedItem();
@@ -57,13 +59,49 @@ public class principalController {
                 newListController.setName("Mano, no hay nadie seleccionado!");
             }
 
+            */
+
             // Muestra la ventana
             stage.show();
             // Hide this current window (if this is what you want)
-            // ((Node)(event.getSource())).getScene().getWindow().hide();
+            ((Node)(event.getSource())).getScene().getWindow().hide();
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void editListWindow(ActionEvent event) {
+        Parent root;
+        try {
+
+            // Cargar la nueva ventana
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("TestScene.fxml"));
+            root = loader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Seleccion");
+            stage.setScene(new Scene(root, 450, 450));
+
+
+           /*
+            // Manda la persona seleccionada
+            ListController listController = loader.getController();
+            ShoppingItem selectedItem = listsTable.getSelectionModel().getSelectedItem();
+            if (selectedItem != null) {
+                newListController.setName("" + selectedItem);
+            } else {
+                newListController.setName("Mano, no hay nadie seleccionado!");
+            }
+            */
+
+            // Muestra la ventana
+            stage.show();
+            // Hide this current window (if this is what you want)
+            ((Node)(event.getSource())).getScene().getWindow().hide();
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        }
+
     }
 }
 
