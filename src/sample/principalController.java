@@ -43,7 +43,7 @@ public class principalController {
         try {
 
             // Cargar la nueva ventana
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("TestScene.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("NewList.fxml"));
             root = loader.load();
             Stage stage = new Stage();
             stage.setTitle("Seleccion");
@@ -75,7 +75,7 @@ public class principalController {
         try {
 
             // Cargar la nueva ventana
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("TestScene.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("List.fxml"));
             root = loader.load();
             Stage stage = new Stage();
             stage.setTitle("Seleccion");

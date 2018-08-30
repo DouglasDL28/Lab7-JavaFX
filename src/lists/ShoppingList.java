@@ -4,17 +4,20 @@ import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleListProperty;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.ObservableList;
+
+import java.util.ArrayList;
 
 public class ShoppingList {
     private SimpleStringProperty name;
     private SimpleStringProperty description;
-    private SimpleListProperty<ShoppingItem> items;
+    private ObservableList<ShoppingItem> items;
     private SimpleDoubleProperty totalPrice;
     private SimpleIntegerProperty pendings;
 
 
     public ShoppingList(String name, String description) {
-        this.items = new SimpleListProperty<>();
+        this.items = new ObservableList<ShoppingItem>();
         this.name = new SimpleStringProperty();
         this.description = new SimpleStringProperty();
         this.totalPrice = new SimpleDoubleProperty();

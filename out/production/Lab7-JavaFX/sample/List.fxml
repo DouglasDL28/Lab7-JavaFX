@@ -32,13 +32,13 @@
       <Button fx:id="addItemButton" mnemonicParsing="false" text="+Artículo" GridPane.columnIndex="4" GridPane.rowIndex="1" />
       <Label text="Nombre lista" GridPane.columnIndex="2" GridPane.rowIndex="2" />
       <Label text="Descripción" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-      <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+      <TableView fx:id="itemsTableView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
         <columns>
-            <TableColumn prefWidth="125.0" text="Artículo" />
-          <TableColumn prefWidth="65.0" text="Cantidad" />
-          <TableColumn prefWidth="63.0" text="Unitario" />
-            <TableColumn prefWidth="74.0" text="Total " />
-            <TableColumn prefWidth="82.0" text="Estado" />
+            <TableColumn fx:id="itemCol" prefWidth="125.0" text="Artículo" />
+          <TableColumn fx:id="quantityCol" prefWidth="65.0" text="Cantidad" />
+          <TableColumn fx:id="priceCol" prefWidth="63.0" text="Unitario" />
+            <TableColumn fx:id="totalCol" prefWidth="74.0" text="Total " />
+            <TableColumn fx:id="stateCol" prefWidth="82.0" text="Estado" />
         </columns>
       </TableView>
    </children>
