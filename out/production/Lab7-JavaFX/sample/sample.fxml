@@ -26,8 +26,8 @@
       <TableView fx:id="listsTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
         <columns>
           <TableColumn fx:id="namesColumn" prefWidth="118.13866806030273" text="Nombre" />
-          <TableColumn fx:id="pendingsColumn" prefWidth="169.86134338378906" text="Pendientes" />
-            <TableColumn fx:id="totalsColumn" prefWidth="96.59454345703125" text="Total" />
+          <TableColumn fx:id="pendingsCol" prefWidth="169.86134338378906" text="Pendientes" />
+            <TableColumn fx:id="totalsCol" prefWidth="96.59454345703125" text="Total" />
         </columns>
       </TableView>
       <Label prefHeight="17.0" prefWidth="204.0" text="Mis listas:" textAlignment="CENTER" GridPane.columnIndex="1">
